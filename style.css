@@ -1,6 +1,6 @@
 :root{
     --clr-background: #1fca55;
-    --clr-white:#ffffff;
+    --clr-lightgreen:#d1ffcd;
     --clr-primary:#dddddd;
     --clr-gray:#263238;
 
@@ -11,6 +11,8 @@
 body{
     color: var(--clr-gray);
     font-family: 'Times New Roman', Times, serif;
+    background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed;
+    width: 100%;
 }
 
 .header-top{
