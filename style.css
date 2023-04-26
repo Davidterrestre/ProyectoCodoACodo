@@ -11,8 +11,6 @@
 body{
     color: var(--clr-gray);
     font-family: 'Times New Roman', Times, serif;
-    background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed;
-    width: 100%;
 }
 
 .header-top{
