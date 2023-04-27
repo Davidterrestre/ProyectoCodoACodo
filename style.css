@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --clr-background: #1fca55;
-    --clr-white:#ffffff;
+    --clr-lightgreen:#d1ffcd;
     --clr-primary:#dddddd;
     --clr-gray:#263238;
 
@@ -8,9 +13,21 @@
     --border-radius:0.2em;
 }
 
+html,body {
+    height: 100%;
+    width: 100%;
+}
 body{
     color: var(--clr-gray);
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(FondoImage.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:black; /* por si la imagen de fondo no carga en algun dispositivo*/
+    /* background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed; */
+    width: 100%;
 }
 
 .header-top{
