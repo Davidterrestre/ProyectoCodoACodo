@@ -2,7 +2,7 @@
     --clr-background: #1fca55;
     --clr-lightgreen:#d1ffcd;
     --clr-primary:#dddddd;
-    --clr-gray:#263238;
+    --clr-gray:#0478b3;
 
     --font-size:16px;
     --border-radius:0.2em;
@@ -13,6 +13,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed;
     width: 100%;
+    
+    
+    
 }
 
 .header-top{
@@ -51,5 +54,9 @@ body{
 
 .header-right{
     float: right;
+    
+    
 }
+
+
 
