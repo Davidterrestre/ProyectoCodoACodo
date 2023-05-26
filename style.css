@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 :root{
-    --clr-background: #1fca55;
+    --clr-background: #53cd7a;
     --clr-lightgreen:#d1ffcd;
-    --clr-primary:#dddddd;
+    --clr-primary:#fd5f5f;
     --clr-gray:#263238;
 
     --font-size:16px;
@@ -18,9 +17,10 @@ html,body {
     width: 100%;
 }
 body{
+    
     color: var(--clr-gray);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(FondoImage.jpeg) ;
+    background-image: url(FondoImage.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -35,11 +35,12 @@ body{
     position: fixed;
     background-color: var(--clr-background);
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     top: 0.8rem;
 }
 
 .header-top a{
+    color:var(--clr-gray);
     float: left;
     text-align: center;
     text-decoration: none;
@@ -68,3 +69,68 @@ body{
     float: right;
 }
 
+/*---------------------------Main of THE page--------------------------*/
+
+#container-news{
+    background-color: var(--clr-background);
+    height: 100vh;
+    position: relative;
+    margin:6.2em 3.1em 2em 3.1em ;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: var(--border-radius);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------Footer of THE page--------------------------*/
+
+footer{
+    display: flex;
+    padding:1em;
+    background-color: rgb(23, 23, 23);
+    border-radius: var(--border-radius);
+    color: whitesmoke;
+    height: 10vh;
+    width: auto;
+    margin-left: 3.1em;
+    margin-right: 3.1em;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footerA{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.footerA:hover{
+    font-size: 18px;
+    color:var(--clr-primary);
+}
