@@ -68,3 +68,12 @@ body{
     float: right;
 }
 
+.tabla-container {
+    display: flex;
+  }
+  
+  #tabla1,
+  #tabla2 {
+    width: 50%;
+    margin-right: 10px;
+  }
