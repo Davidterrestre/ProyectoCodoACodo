@@ -72,8 +72,8 @@ body{
     display: flex;
   }
   
-  #tabla1,
-  #tabla2 {
+  #PRINCIPAL,
+  #SECUNDARIA {
     width: 50%;
     margin-right: 10px;
   }

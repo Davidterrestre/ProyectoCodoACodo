@@ -11,7 +11,7 @@ tabla1Symbols.forEach(symbol => {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      mostrarData(data, 'tabla1');
+      mostrarData(data, 'PRINCIPAL');
     })
     .catch(error => {
       console.error(error);
@@ -24,7 +24,7 @@ tabla2Symbols.forEach(symbol => {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      mostrarData(data, 'tabla2');
+      mostrarData(data, 'SECUNDARIA');
     })
     .catch(error => {
       console.error(error);
