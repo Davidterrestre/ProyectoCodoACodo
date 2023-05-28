@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
-<!DOCTYPE html>
-<html>
-
 <head>
+
   <title>Formulario con Animación</title>
   <style>
-    /* Estilos del formulario y animación */
+    
     form {
       margin: 20px;
       position: relative;
     }
 
     input[type="submit"] {
-      background-color: #0dec18;
-      color: #030303;
+      background-color: #333;
+      color: #fff;
       padding: 5px 10px;
       border: none;
       cursor: pointer;
@@ -27,7 +25,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(125, 252, 6, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -42,16 +40,16 @@
     }
 
     .form-animation p {
-      color: #fffbfb;
+      color: #fff;
       font-size: 24px;
     }
   </style>
   <script>
     function validarFormulario() {
-
+      
       var formAnimation = document.getElementById("form-animation");
       formAnimation.classList.add("show");
-      setTimeout(function () {
+      setTimeout(function() {
         formAnimation.classList.remove("show");
       }, 2000);
 
@@ -59,17 +57,18 @@
     }
   </script>
 </head>
-
 <body>
   <div class="container">
     <h1>Formulario de Contacto</h1>
     <form name="formulario" onsubmit="return validarFormulario()" method="post">
       <label for="nombre">Nombre:</label>
+      <br><br>
       <input type="text" name="nombre" required><br>
-
+      <br><br>
       <label for="email">Email:</label>
+      <br><br>
       <input type="email" name="email" required><br>
-
+      <br><br>
       <label for="mensaje">Mensaje:</label><br>
       <textarea name="mensaje" rows="5" required></textarea><br>
 
@@ -80,13 +79,4 @@
     </div>
   </div>
 </body>
-
-<br><br><br><br>
-
-<footer>
-  <a class="footerA" href="index.html">NombreEmpresa</a>
-  <a class="footerA" href="contactos.html">Información de contacto</a>
-  <p>© 2023 copyright </p>
-</footer>
-
 </html>
