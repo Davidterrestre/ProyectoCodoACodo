@@ -7,7 +7,7 @@
     --clr-lightgreen:#d1ffcd;
     --clr-primary:#fd5f5f;
     --clr-gray:#282828;
-    --clr-opacitygreen:rgba(73, 198, 119, 0.5);
+    --clr-opacitygreen:rgba(49, 174, 95, 0.3);
     
     --font-size:16px;
     --border-radius:0.2em;
@@ -39,7 +39,7 @@ body{
     width: 100%;
     border-radius: var(--border-radius);
     top: 0.8rem;
-    
+    z-index:1;
     
 }
 
@@ -64,10 +64,7 @@ body{
     color:var(--clr-gray);
 }
 
-.header-top a.active{
-    background-color: var(--clr-primary);
-    color:var(--clr-gray);
-}
+
 
 .header-right{
     float: right;
@@ -97,7 +94,7 @@ body{
 
 
 
-/*---------------------------Main of THE page "Noticias.html"--------------------------*/
+/*-----------------------------------------Main of THE page "Noticias.html"-------------------------------------------*/
 .noticias{
    
     margin-top: 8%;
@@ -142,10 +139,8 @@ body{
  .general-img:hover{
     opacity: 0.8;
     border: 2px solid var(--clr-primary);
+    
 }
-
-
-
 
 
 /*---------section finanzas------------*/ 
@@ -206,9 +201,26 @@ body{
 
 
 
+/*-----------------------------------------Main of THE page "precios.html"-------------------------------------------*/
 
+.tabla-container {
+    padding: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    margin-top: 8%;
+    z-index: -1;
+    background-color: var(--clr-opacitygreen);
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    margin-left: 3.1em;
+    margin-right: 3.1em;
+  }
 
-
+#PRINCIPAL, #SECUNDARIA{
+    margin: 2rem;
+}
+  
 
 
 
@@ -254,16 +266,3 @@ footer{
     font-size: 18px;
     color:var(--clr-primary);
 }
-.tabla-container {
-    display: flex;
-    margin-top: 8%;
-    z-index: -1;
-    
-
-  }
-  
-  #PRINCIPAL,
-  #SECUNDARIA {
-    width: 50%;
-    margin-right: 10px;
-  }
