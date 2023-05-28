@@ -6,9 +6,9 @@
     --clr-background: #53cd7a;
     --clr-lightgreen:#d1ffcd;
     --clr-primary:#fd5f5f;
-    --clr-gray:#0478b3;
-    --sangria-izquierda: 20px;
-
+    --clr-gray:#282828;
+    --clr-opacitygreen:rgba(73, 198, 119, 0.5);
+    
     --font-size:16px;
     --border-radius:0.2em;
 }
@@ -29,9 +29,6 @@ body{
     background-color:black; /* por si la imagen de fondo no carga en algun dispositivo*/
     /* background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed; */
     width: 100%;
-    margin-left: var(--sangria-izquierda);
-    
-    
     
 }
 
@@ -77,13 +74,7 @@ body{
     
     
 }
-.noticias{
-   
-    margin-top: 8%;
-    z-index: -1;
-    
 
- }
 
 
 /*---------------------------Main of THE page--------------------------*/
@@ -98,6 +89,118 @@ body{
     border-radius: var(--border-radius);
 }
 
+
+
+
+
+
+
+
+
+/*---------------------------Main of THE page "Noticias.html"--------------------------*/
+.noticias{
+   
+    margin-top: 8%;
+    grid-column: repeat(1, 1fr);
+    grid-template-rows: 0.8fr 0.8fr 1fr;
+    grid-template-areas:
+    "titulo-infobae"
+    "infobae-container"
+    "titulo-finanzas"
+    "finanzas-container"
+    "titulo-proximamente"
+    "proximamente-container";
+ }
+
+/*---------section infobae ------------*/ 
+
+.titulo-infobae{
+    margin: 2rem;
+    grid-area: titulo-infobae;
+    display: flex;
+    justify-content: center;
+    color:rgb(218, 218, 218);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infobae-container{
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: var(--clr-opacitygreen);
+    grid-area: infobae-container ;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
+    
+ }
+
+.general-img{
+    border-radius: var(--border-radius);
+}
+
+ .general-img:hover{
+    opacity: 0.8;
+    border: 2px solid var(--clr-primary);
+}
+
+
+
+
+
+/*---------section finanzas------------*/ 
+
+.titulo-finanzas{
+    margin: 2rem;
+    grid-area: titulo-finanzas;
+    display: flex;
+    justify-content: center;
+    color:rgb(218, 218, 218);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.finanzas-container{
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: var(--clr-opacitygreen);
+    grid-area: finanzas-container ;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
+ }
+
+
+
+
+ /*---------section proximamente------------*/ 
+
+ .titulo-proximamente{
+    margin: 2rem;
+    grid-area: titulo-proximamente;
+    display: flex;
+    justify-content: center;
+    color:rgb(218, 218, 218);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ .proximamente-container{
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: var(--clr-opacitygreen);
+    grid-area: proximamente-container ;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+
+.items-proximamente{
+    padding: 0.2rem;
+    margin: 1rem;
+}
 
 
 
