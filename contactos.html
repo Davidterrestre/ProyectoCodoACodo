@@ -3,71 +3,82 @@
 <link rel="stylesheet" href="style.css">
 
 <head>
-  <title>Formulario de Contacto</title>
+
+  <title>Formulario con Animación</title>
+  <style>
+    form {
+      margin: 20px;
+      position: relative;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .form-animation.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .form-animation p {
+      color: #fff;
+      font-size: 24px;
+    }
+  </style>
   <script>
     function validarFormulario() {
-      let nombre = document.forms["formulario"]["nombre"].value;
-      let email = document.forms["formulario"]["email"].value;
-      let mensaje = document.forms["formulario"]["mensaje"].value;
 
-      if (nombre == "") {
-        alert("Por favor, ingresa tu nombre");
-        return false;
-      }
+      var formAnimation = document.getElementById("form-animation");
+      formAnimation.classList.add("show");
+      setTimeout(function () {
+        formAnimation.classList.remove("show");
+      }, 2000);
 
-      if (email == "") {
-        alert("Por favor, ingresa tu dirección de correo electrónico");
-        return false;
-      }
-
-      if (mensaje == "") {
-        alert("Por favor, ingresa un mensaje");
-        return false;
-      }
+      return false;
     }
   </script>
 </head>
 
-<body style="color:rgb(58, 158, 12);">
+<body>
+  <div class="container">
+    <h1>Formulario de Contacto</h1>
+    <form name="formulario" onsubmit="return validarFormulario()" method="post">
+      <label for="nombre">Nombre:</label>
+      <br><br>
+      <input type="text" name="nombre" required><br>
+      <br><br>
+      <label for="email">Email:</label>
+      <br><br>
+      <input type="email" name="email" required><br>
+      <br><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea name="mensaje" rows="5" required></textarea><br>
 
-  <header>
-    <nav class="header-top">
-      <div>
-        <a href="index.html" class="logo"><img src="img/undraw_bitcoin_re_urgq.svg" alt="LOGO" height="30"></a>
-      </div>
-      <div class="header-right">
-        <a href="index.html">Inicio</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="contactos.html">Contactos</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="precios.html">Precios</a>
-      </div>
-    </nav>
-  </header>
-  <h1>Formulario de Contacto</h1>
-  <br><br>
-  <form name="formulario" onsubmit="return validarFormulario()" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" required><br>
-    <br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" required><br>
-    <br><br>
-    <label for="mensaje">Mensaje:</label><br><br>
-    <textarea name="mensaje" rows="4" required></textarea><br>
-
-    <input type="submit" value="Enviar">
-  </form>
+      <input type="submit" value="Enviar">
+    </form>
+    <div id="form-animation" class="form-animation">
+      <p>¡Formulario enviado!</p>
+    </div>
+  </div>
 </body>
-
-</html>
-<br><br><br><br>
-
-<footer>
-  <a class="footerA" href="index.html">NombreEmpresa</a>
-  <a class="footerA" href="contactos.html">Información de contacto</a>
-  <p>© 2023 copyright </p>
-</footer>
 
 </html>
