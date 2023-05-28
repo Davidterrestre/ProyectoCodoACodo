@@ -8,8 +8,7 @@
     --clr-primary:#fd5f5f;
     --clr-gray:#282828;
     --clr-opacitygreen:rgba(73, 198, 119, 0.5);
-    --sangria-izquierda: 20px;
-
+    
     --font-size:16px;
     --border-radius:0.2em;
 }
@@ -30,9 +29,6 @@ body{
     background-color:black; /* por si la imagen de fondo no carga en algun dispositivo*/
     /* background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed; */
     width: 100%;
-    margin-left: var(--sangria-izquierda);
-    
-    
     
 }
 
@@ -93,6 +89,14 @@ body{
     border-radius: var(--border-radius);
 }
 
+
+
+
+
+
+
+
+
 /*---------------------------Main of THE page "Noticias.html"--------------------------*/
 .noticias{
    
@@ -102,14 +106,16 @@ body{
     grid-template-areas:
     "titulo-infobae"
     "infobae-container"
+    "titulo-finanzas"
     "finanzas-container"
+    "titulo-proximamente"
     "proximamente-container";
  }
 
 /*---------section infobae ------------*/ 
 
 .titulo-infobae{
-    margin: 0.5rem;
+    margin: 2rem;
     grid-area: titulo-infobae;
     display: flex;
     justify-content: center;
@@ -136,7 +142,7 @@ body{
 /*---------section finanzas------------*/ 
 
 .titulo-finanzas{
-    margin: 0.5rem;
+    margin: 2rem;
     grid-area: titulo-finanzas;
     display: flex;
     justify-content: center;
@@ -151,20 +157,41 @@ body{
     background-color: var(--clr-opacitygreen);
     grid-area: finanzas-container ;
     border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
  }
 
 
 
 
  /*---------section proximamente------------*/ 
+
+ .titulo-proximamente{
+    margin: 2rem;
+    grid-area: titulo-proximamente;
+    display: flex;
+    justify-content: center;
+    color:rgb(218, 218, 218);
+    font-size: 30px;
+    font-weight: bold;
+}
+
  .proximamente-container{
     padding: 2rem;
     margin: 0.5rem;
-    background-color: azure;
+    background-color: var(--clr-opacitygreen);
     grid-area: proximamente-container ;
     border-radius: var(--border-radius);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
  }
+
+.items-proximamente{
+    padding: 0.2rem;
+    margin: 1rem;
+}
 
 
 
