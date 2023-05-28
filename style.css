@@ -20,7 +20,7 @@ body{
     
     color: var(--clr-gray);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(FondoImage.jpeg);
+    background-image: url(img/FondoImage.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -82,6 +82,7 @@ body{
     
 
  }
+
 
 /*---------------------------Main of THE page--------------------------*/
 
@@ -150,6 +151,10 @@ footer{
 }
 .tabla-container {
     display: flex;
+    margin-top: 8%;
+    z-index: -1;
+    
+
   }
   
   #PRINCIPAL,
