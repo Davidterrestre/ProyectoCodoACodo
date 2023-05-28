@@ -84,3 +84,12 @@ body{
 
 
 
+.tabla-container {
+    display: flex;
+  }
+  
+  #PRINCIPAL,
+  #SECUNDARIA {
+    width: 50%;
+    margin-right: 10px;
+  }

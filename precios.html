@@ -6,23 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotizaciones criptomonedas</title>
-    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="color:rgb(58, 158, 12);">
     
-    <h2>Cotizaciones de criptomonedas</h2>
+    <h2 style="color: rgb(235, 235, 18);" spa>Cotizaciones de criptomonedas</h2>
 
-    <table class="tabla-css">
-        <thead>
+
+    
+    <div class="tabla-container">
+        <table id="PRINCIPAL">
+          <caption>PRINCIPAL</caption>
+          <thead>
             <tr>
-                <th>Símbolo</th>
-                <th>Precio</th>
+              <th style="color:rgb(184, 46, 11)"><span style="background-color: yellow;"> Moneda </span></th>
+              <th style="color:rgb(184, 46, 11)"><span style="background-color: yellow;"> Precio </span></th>
+              
             </tr>
-        </thead>
-        <tbody id="data">
-        </tbody>
-    </table>
+          </thead>
+          <tbody id="data1">
+          </tbody>
+        </table>
+      
+        <table id="SECUNDARIA">
+          <caption>SECUNDARIA</caption>
+          <thead>
+            <tr>
+                <th style="color:rgb(184, 46, 11)"><span style="background-color: yellow;"> Moneda </span></th>
+                <th style="color:rgb(184, 46, 11)"><span style="background-color: yellow;"> Precio </span></th>
+            </tr>
+          </thead>
+          <tbody id="data2">
+          </tbody>
+        </table>
+    </div>
+      
 
     <script src="app.js"></script>
 </body>
