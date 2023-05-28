@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+
 <head>
 
   <title>Formulario con Animación</title>
   <style>
-    
     form {
       margin: 20px;
       position: relative;
@@ -46,17 +46,18 @@
   </style>
   <script>
     function validarFormulario() {
-      
+
       var formAnimation = document.getElementById("form-animation");
       formAnimation.classList.add("show");
-      setTimeout(function() {
+      setTimeout(function () {
         formAnimation.classList.remove("show");
       }, 2000);
 
-      return false; 
+      return false;
     }
   </script>
 </head>
+
 <body>
   <div class="container">
     <h1>Formulario de Contacto</h1>
@@ -79,4 +80,5 @@
     </div>
   </div>
 </body>
+
 </html>
