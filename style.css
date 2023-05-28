@@ -135,6 +135,15 @@ body{
     
  }
 
+.general-img{
+    border-radius: var(--border-radius);
+}
+
+ .general-img:hover{
+    opacity: 0.8;
+    border: 2px solid var(--clr-primary);
+}
+
 
 
 
