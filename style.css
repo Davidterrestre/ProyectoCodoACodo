@@ -8,6 +8,7 @@
     --clr-primary:#fd5f5f;
     --clr-gray:#282828;
     --clr-opacitygreen:rgba(73, 198, 119, 0.5);
+    --sangria-izquierda: 20px;
 
     --font-size:16px;
     --border-radius:0.2em;
@@ -29,6 +30,7 @@ body{
     background-color:black; /* por si la imagen de fondo no carga en algun dispositivo*/
     /* background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed; */
     width: 100%;
+    margin-left: var(--sangria-izquierda);
     
     
     
