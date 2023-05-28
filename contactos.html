@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/undraw_bitcoin_re_urgq.svg" type="image/x-icon">
-    <title>contactos</title>
-</head>
-<body>
-    <div class="header-top">
-        <a href="index.html" class="logo"><img src="img/undraw_bitcoin_re_urgq.svg" alt="LOGO" height="30"></a>
-        <div class="header-right">
-            <a href="index.html" class="active">Inicio</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="contactos.html">Contactos</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="precios.html">Precios</a>
-        </div>
-    </div>
-</body>
+<link rel="stylesheet" href="style.css">
+    <head>
+      <title>Formulario de Contacto</title>
+      <script>
+        function validarFormulario() {
+          var nombre = document.forms["formulario"]["nombre"].value;
+          var email = document.forms["formulario"]["email"].value;
+          var mensaje = document.forms["formulario"]["mensaje"].value;
+    
+          if (nombre == "") {
+            alert("Por favor, ingresa tu nombre");
+            return false;
+          }
+    
+          if (email == "") {
+            alert("Por favor, ingresa tu dirección de correo electrónico");
+            return false;
+          }
+    
+          if (mensaje == "") {
+            alert("Por favor, ingresa un mensaje");
+            return false;
+          }
+        }
+      </script>
+    </head>
+    <body style="color:rgb(58, 158, 12);">
+      <h1>Formulario de Contacto</h1>
+      <br><br>
+      <form name="formulario" onsubmit="return validarFormulario()" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+    <br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+    <br><br>
+        <label for="mensaje">Mensaje:</label><br><br>
+        <textarea name="mensaje" rows="4" required></textarea><br>
+    
+        <input type="submit" value="Enviar">
+      </form>
+    </body>
+    </html>
+   <br><br><br><br> 
+
 <footer>
     <a class="footerA" href="index.html">NombreEmpresa</a>
     <a class="footerA" href="contactos.html">Información de contacto</a>
