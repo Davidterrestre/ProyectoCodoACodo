@@ -134,3 +134,12 @@ footer{
     font-size: 18px;
     color:var(--clr-primary);
 }
+.tabla-container {
+    display: flex;
+  }
+  
+  #PRINCIPAL,
+  #SECUNDARIA {
+    width: 50%;
+    margin-right: 10px;
+  }
