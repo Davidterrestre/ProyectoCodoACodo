@@ -24,7 +24,7 @@
 
     .form-animation {
       position: absolute;
-      top: 0;
+      top: 8%;
       left: 0;
       width: 100%;
       height: 100%;
@@ -85,19 +85,19 @@
     </div>
     <div class="formulario-containner">
       <h1 class="titulo-contacto">Formulario de Contacto</h1>
-      <form name="formulario" onsubmit="return validarFormulario()" method="post">
+      <form class="formulario-contacto" name="formulario" onsubmit="return validarFormulario()" method="post">
         <label for="nombre">Nombre:</label>
-        
+        <br>
         <input type="text" name="nombre" required><br>
-        
+        <br>
         <label for="email">Email:</label>
-        
+        <br>
         <input type="email" name="email" required><br>
-        
+        <br>
         <label for="mensaje">Mensaje:</label><br>
         <textarea name="mensaje" rows="5" required></textarea><br>
 
-        <input type="submit" value="Enviar">
+        <input class="boton-formulario" type="submit" value="Enviar">
       </form>
       <div id="form-animation" class="form-animation">
         <p>¡Formulario enviado, muchas gracias!</p>
