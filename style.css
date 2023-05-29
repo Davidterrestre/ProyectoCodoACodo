@@ -1,3 +1,4 @@
+/*---------Variables globales y declaraciones globales-------*/
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,7 @@ body{
     
 }
 
+/*-------------------------- NavBar of the pages -----------------------------------*/
 .header-top{
     overflow: hidden;
     position: fixed;
@@ -75,19 +77,43 @@ body{
 
 
 
-/*---------------------------Main of THE page--------------------------*/
+/*---------------------------Main of THE index.html--------------------------*/
 
 #container-news{
-    background-color: var(--clr-background);
+    background-color: var(--clr-opacitygreen);
     height: 100vh;
     position: relative;
     margin:6.2em 3.1em 2em 3.1em ;
     z-index: -1;
-    opacity: 0.5;
     border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
 }
 
+.titulo-index{
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    color:var(--clr-primary);
+    font-size: 45px;
+    background-color:rgba(45, 45, 45, 0.8);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);  
+}
 
+.parrafo-index{
+    align-self: center;
+    color:rgb(218, 218, 218);
+    font-size: 25px;
+    background-color:rgba(45, 45, 45, 0.8);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);  
+}
 
 
 
@@ -137,6 +163,7 @@ body{
 
 .general-img{
     border-radius: var(--border-radius);
+    
 }    
 
  .general-img:hover{
@@ -243,7 +270,7 @@ body{
     color:rgb(218, 218, 218);
     color: var(--clr-gray);
     border-radius: var(--border-radius);
-    border: 2px solid rgb(45, 45, 45);
+    border: 6px solid rgb(45, 45, 45);
     padding: 0.4rem;
     background: rgb(224,224,224);
     background: linear-gradient(4deg, rgba(224,224,224,0.7) 29%, rgba(255, 255, 255, 0.4) 100%);
@@ -286,24 +313,52 @@ body{
 
 /*----------------section nosotros-----------------*/
 .nosotros-contacto{
-    margin: 0;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-basis: 50%;
+    color:rgb(218, 218, 218); 
+    background-color: var(--clr-gray);
+    border-radius: var(--border-radius);
+    
+    
 }
 
 .titulo-contacto{
     color:var(--clr-primary);
     font-size: 50px;
-    
-
+    align-self: center;
 }
 
 .parrafo-contacto{
     font-size: 40px;
+    align-self:center;
 }
 
 /*----------------section formulario-----------------*/
-.formulario-contacto{
-    margin: 0;
+.formulario-container{
     
+    margin: 0;
+    flex-basis: 50%;
+}
+
+.formulario-contacto{
+    padding: 2rem;
+    font-size: 30px;
+    color:rgb(218, 218, 218) ;
+}
+
+.formulario-contacto, label{
+    padding: 2.5rem 1rem;
+}
+
+.boton-formulario{
+    font-size:20px;
+}
+
+.boton-formulario:hover{
+    background-color:rgb(218, 218, 218) ;
+    color:var(--clr-gray);
+
 
 }
 
