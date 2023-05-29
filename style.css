@@ -402,13 +402,7 @@ footer{
     .header-right.show {
       display: block;
     }
-    @media screen and (max-width: 768px) {
-        
-        .footerA {
-          display: block;
-          margin-bottom: 10px;
-        }
-    }
+    
     .menu.active {
         background: #055f20; 
       }
