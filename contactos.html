@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
 
 <head>
 
@@ -59,26 +62,54 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>Formulario de Contacto</h1>
-    <form name="formulario" onsubmit="return validarFormulario()" method="post">
-      <label for="nombre">Nombre:</label>
-      <br><br>
-      <input type="text" name="nombre" required><br>
-      <br><br>
-      <label for="email">Email:</label>
-      <br><br>
-      <input type="email" name="email" required><br>
-      <br><br>
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea name="mensaje" rows="5" required></textarea><br>
+  <header>
+    <nav class="header-top" >
+        <div >
+            <a href="index.html" class="logo"><img src="img/undraw_bitcoin_re_urgq.svg" alt="LOGO" height="30"></a>
+        </div>
+        <div class="header-right" >
+            <a href="index.html" >Inicio</a>
+            <a href="noticias.html" >Noticias</a>
+            <a href="precios.html">Precios</a>
+            <a href="contactos.html" >Contactos</a>
+        </div>
+    </nav>
+</header>
+  <div class="container-contacto">
+    <div class="nosotros-contacto">
+      <h1 class="titulo-contacto">¿Quiénes somos?</h1>
+      <br>
+      <p class="parrafo-contacto">Como equipo de desarrolladores, compartimos una pasión por la tecnología y el código. Estamos aquí para colaborar, aprender unos de otros y enfrentar desafíos con creatividad y determinación.
 
-      <input type="submit" value="Enviar">
-    </form>
-    <div id="form-animation" class="form-animation">
-      <p>¡Formulario enviado!</p>
+        Nuestro objetivo es crear aplicaciones y software de alta calidad que impacten de manera positiva en la vida de las personas.</p>
     </div>
+    <div class="formulario-containner">
+      <h1 class="titulo-contacto">Formulario de Contacto</h1>
+      <form name="formulario" onsubmit="return validarFormulario()" method="post">
+        <label for="nombre">Nombre:</label>
+        
+        <input type="text" name="nombre" required><br>
+        
+        <label for="email">Email:</label>
+        
+        <input type="email" name="email" required><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" rows="5" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+      <div id="form-animation" class="form-animation">
+        <p>¡Formulario enviado!</p>
+      </div>
+    </div>
+    
   </div>
+  <footer>
+    <a class="footerA" href="index.html">Economía</a>
+    <a class="footerA" href="contactos.html">Información de contacto</a>
+    <p>© 2023 copyright </p>
+  </footer>
 </body>
 
 </html>

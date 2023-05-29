@@ -20,7 +20,7 @@ html,body {
 body{
     
     color: var(--clr-gray);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Mukta', sans-serif;
     background-image: url(img/FondoImage.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -29,6 +29,7 @@ body{
     background-color:black; /* por si la imagen de fondo no carga en algun dispositivo*/
     /* background: var(--clr-lightgreen) url(FondoImage.jpeg) no-repeat fixed; */
     width: 100%;
+    font-weight: 900;
     
 }
 
@@ -117,7 +118,7 @@ body{
     display: flex;
     justify-content: center;
     color:rgb(218, 218, 218);
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -131,17 +132,16 @@ body{
     justify-content: space-around;
     margin-left: 3.1em;
     margin-right: 3.1em;
-    
- }
+}
+
 
 .general-img{
     border-radius: var(--border-radius);
-}
+}    
 
  .general-img:hover{
     opacity: 0.8;
     border: 2px solid var(--clr-primary);
-    
 }
 
 
@@ -153,7 +153,7 @@ body{
     display: flex;
     justify-content: center;
     color:rgb(218, 218, 218);
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -180,7 +180,7 @@ body{
     display: flex;
     justify-content: center;
     color:rgb(218, 218, 218);
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -201,7 +201,11 @@ body{
 .items-proximamente{
     padding: 0.2rem;
     margin: 1rem;
+    font-size: 30px;
+    color: black;
 }
+
+
 
 
 
@@ -218,48 +222,90 @@ body{
     background-color: var(--clr-opacitygreen);
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: auto;
     margin-left: 3.1em;
     margin-right: 3.1em;
   }
 
 #PRINCIPAL, #SECUNDARIA{
     margin: 2rem;
-    border: 2px solid var(--clr-gray);
-    background-color:rgb(217, 217, 217);
+    border: 2px solid rgb(45, 45, 45);
+    background-color:rgb(0, 0, 0);
     align-items: center;
     font-size: 18px;
     padding: 0.6rem;
     border-radius: var(--border-radius);
+    color:var(--clr-background);
 }
 
 #main-titulo{
-    font-size: 40px;
+    font-size: 50px;
     color:rgb(218, 218, 218);
-    border: 2px solid var(--clr-gray);
+    color: var(--clr-gray);
     border-radius: var(--border-radius);
-    padding: 0.4rem
-    
+    border: 2px solid rgb(45, 45, 45);
+    padding: 0.4rem;
+    background: rgb(224,224,224);
+    background: linear-gradient(4deg, rgba(224,224,224,0.7) 29%, rgba(255, 255, 255, 0.4) 100%);
 }
 
 .titulo-precio{
     font-size: 30px;
-    background-color: rgb(217, 217, 217);
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
     color:var(--clr-primary);
-    border: 2px solid var(--clr-gray);
+    border: 2px solid rgb(45, 45, 45);
     border-radius: var(--border-radius);
     padding: 0.4rem
 
 }
 
 .table-precio{
-    background-color:rgb(217, 217, 217);
+    color:var(--clr-primary);
+    background-color:rgb(0, 0, 0);
     font-size: 25px;
+    margin: 0.5rem;
+    margin-left: 3.1em;
+    margin-right: 3.1em;
     
 }
 
 
 
+/*-----------------------------------------Main of THE page "contactos.html"-------------------------------------------*/
+
+
+.container-contacto{
+    background-color: var(--clr-opacitygreen);
+    margin: 0.5rem 3.1rem;
+    margin-top: 8%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*----------------section nosotros-----------------*/
+.nosotros-contacto{
+    margin: 0;
+}
+
+.titulo-contacto{
+    color:var(--clr-primary);
+    font-size: 50px;
+    
+
+}
+
+.parrafo-contacto{
+    font-size: 40px;
+}
+
+/*----------------section formulario-----------------*/
+.formulario-contacto{
+    margin: 0;
+    
+
+}
 
 
 
