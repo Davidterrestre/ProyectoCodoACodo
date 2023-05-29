@@ -163,6 +163,7 @@ body{
 
 .general-img{
     border-radius: var(--border-radius);
+    
 }    
 
  .general-img:hover{
@@ -269,7 +270,7 @@ body{
     color:rgb(218, 218, 218);
     color: var(--clr-gray);
     border-radius: var(--border-radius);
-    border: 2px solid rgb(45, 45, 45);
+    border: 6px solid rgb(45, 45, 45);
     padding: 0.4rem;
     background: rgb(224,224,224);
     background: linear-gradient(4deg, rgba(224,224,224,0.7) 29%, rgba(255, 255, 255, 0.4) 100%);
@@ -357,6 +358,15 @@ body{
 .boton-formulario:hover{
     background-color:rgb(218, 218, 218) ;
     color:var(--clr-gray);
+
+
+}
+
+textarea {
+    overflow-y: scroll;
+    height: 100px;
+    width: 300px;
+    resize: none; /* Remove this if you want the user to resize the textarea */
 }
 
 
