@@ -402,14 +402,23 @@ footer{
     .header-right.show {
       display: block;
     }
-    @media screen and (max-width: 768px) {
-        
-        .footerA {
-          display: block;
-          margin-bottom: 10px;
-        }
-    }
+    
     .menu.active {
         background: #055f20; 
       }
 }
+/* Estilos para el texto del índice */
+.titulo-index {
+    font-size: 36px; /* Ajusta el tamaño de fuente como desees */
+    text-align: center; /* Centra el texto */
+  }
+  
+  .parrafo-index {
+    font-size: 16px; /* Ajusta el tamaño de fuente como desees */
+    text-align: justify; /* Justifica el texto */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    max-width: 800px; /* Ajusta el ancho máximo del texto como desees */
+    padding: 0 20px; /* Añade un poco de espacio interno */
+  }
+
+    
