@@ -14,7 +14,7 @@
 }
 
 html,body {
-    height: 100%;
+    height: 50vh;
     width: 100%;
 }
 body{
@@ -321,7 +321,6 @@ body{
 
 
 
-
 /*---------------------------Footer of THE page--------------------------*/
 
 footer{
@@ -346,4 +345,30 @@ footer{
 .footerA:hover{
     font-size: 18px;
     color:var(--clr-primary);
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+      
+    .header-right {
+      display: none;
+    }
+    .menu {
+      display: block;
+      
+    }
+    .header-right.show {
+      display: block;
+    }
+    @media screen and (max-width: 768px) {
+        
+        .footerA {
+          display: block;
+          margin-bottom: 10px;
+        }
+    }
+    .menu.active {
+        background: #055f20; 
+      }
 }
