@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/undraw_bitcoin_re_urgq.svg" type="image/x-icon">
     <title>Inicio</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
   </head>
   <body>
     <nav class="header-top">
@@ -20,6 +21,8 @@
             <a href="precios.html">Precios</a>
             <a href="contactos.html">Contactos</a> 
         </div>
+        <label for="check" class="menu"> <i class= "fas fa-bars" ></iclass></i> </label>
+
     </nav>
     <div id="container-news">
       <h1 class="titulo-index">¡Bienvenidos al blog de noticias!</h1>
@@ -28,12 +31,24 @@
 
         En un mundo donde la información fluye constantemente, creemos en la importancia de la transparencia y la calidad periodística. Nuestro equipo de redactores y expertos en diversos campos se esfuerza por brindarte una visión equilibrada y completa de los sucesos que moldean nuestro entorno.
       </p>
-    </div>  
+    </div>
+    <footer>
+      <a class="footerA" href="index.html">Economía</a>
+      <a class="footerA" href="contactos.html">Información de contacto</a>
+      <p>© 2023 copyright </p>
+    </footer>  
   </body>
   
-  <footer>
-    <a class="footerA" href="index.html">Economía</a>
-    <a class="footerA" href="contactos.html">Información de contacto</a>
-    <p>© 2023 copyright </p>
-  </footer>
+  
+
+  <script>
+    // JavaScript para responsive 
+    const menuToggle = document.querySelector('.menu');
+    const headerRight = document.querySelector('.header-right');
+    
+    menuToggle.addEventListener('click', () => {
+      headerRight.classList.toggle('show');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
 </html>

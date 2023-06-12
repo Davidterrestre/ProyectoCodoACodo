@@ -229,7 +229,8 @@ body{
     padding: 0.2rem;
     margin: 1rem;
     font-size: 30px;
-    color: black;
+    color: rgb(231, 255, 51);
+    background-color: var(--clr-gray);
 }
 
 
@@ -325,12 +326,12 @@ body{
 
 .titulo-contacto{
     color:var(--clr-primary);
-    font-size: 50px;
+    font-size: 2.5rem;
     align-self: center;
 }
 
 .parrafo-contacto{
-    font-size: 40px;
+    font-size: 1.5rem;
     align-self:center;
 }
 
@@ -341,7 +342,7 @@ body{
     flex-basis: 50%;
 }
 
-.formulario-contacto{
+#formulario-contacto{
     padding: 2rem;
     font-size: 30px;
     color:rgb(218, 218, 218) ;
@@ -395,4 +396,30 @@ footer{
 .footerA:hover{
     font-size: 18px;
     color:var(--clr-primary);
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+      
+    .header-right {
+      display: none;
+    }
+    .menu {
+      display: block;
+      
+    }
+    .header-right.show {
+      display: block;
+    }
+    @media screen and (max-width: 768px) {
+        
+        .footerA {
+          display: block;
+          margin-bottom: 10px;
+        }
+    }
+    .menu.active {
+        background: #055f20; 
+      }
 }
