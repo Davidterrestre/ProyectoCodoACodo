@@ -15,7 +15,7 @@
 }
 
 html,body {
-    height: 50vh;
+    height: 100%;
     width: 100%;
 }
 body{
@@ -229,7 +229,8 @@ body{
     padding: 0.2rem;
     margin: 1rem;
     font-size: 30px;
-    color: black;
+    color: rgb(231, 255, 51);
+    background-color: var(--clr-gray);
 }
 
 
@@ -325,12 +326,12 @@ body{
 
 .titulo-contacto{
     color:var(--clr-primary);
-    font-size: 50px;
+    font-size: 2.5rem;
     align-self: center;
 }
 
 .parrafo-contacto{
-    font-size: 40px;
+    font-size: 1.5rem;
     align-self:center;
 }
 
@@ -341,7 +342,7 @@ body{
     flex-basis: 50%;
 }
 
-.formulario-contacto{
+#formulario-contacto{
     padding: 2rem;
     font-size: 30px;
     color:rgb(218, 218, 218) ;
@@ -362,7 +363,16 @@ body{
 
 }
 
-/*---------------------------Footer of THE page--------------------------*/
+textarea {
+    overflow-y: scroll;
+    height: 100px;
+    width: 300px;
+    resize: none; 
+}
+
+
+
+/*---------------------------Footer of THE pages--------------------------*/
 
 footer{
     display: flex;
@@ -407,3 +417,18 @@ footer{
         background: #055f20; 
       }
 }
+/* Estilos para el texto del índice */
+.titulo-index {
+    font-size: 36px; /* Ajusta el tamaño de fuente como desees */
+    text-align: center; /* Centra el texto */
+  }
+  
+  .parrafo-index {
+    font-size: 16px; /* Ajusta el tamaño de fuente como desees */
+    text-align: justify; /* Justifica el texto */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    max-width: 800px; /* Ajusta el ancho máximo del texto como desees */
+    padding: 0 20px; /* Añade un poco de espacio interno */
+  }
+
+    
