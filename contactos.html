@@ -26,14 +26,14 @@
 
       .form-animation {
         position: absolute;
-        top: 8%;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -42,11 +42,6 @@
       .form-animation.show {
         opacity: 1;
         visibility: visible;
-      }
-
-      .form-animation p {
-        color: #fff;
-        font-size: 24px;
       }
     </style>
   </head>
@@ -111,5 +106,29 @@
       <p>© 2023 copyright</p>
     </footer>
     <script src="formulario.js"></script>
+    <script>
+      function validarFormulario() {
+        var nombre = document.forms["formulario"]["nombre"].value;
+        var email = document.forms["formulario"]["email"].value;
+        var mensaje = document.forms["formulario"]["mensaje"].value;
+
+        if (nombre === "" || email === "" || mensaje === "") {
+          alert("Por favor, complete todos los campos");
+          return false;
+        }
+
+        mostrarAnimacionFormularioEnviado();
+        return false;
+      }
+
+      function mostrarAnimacionFormularioEnviado() {
+        var formAnimation = document.getElementById("form-animation");
+        formAnimation.classList.add("show");
+        setTimeout(function () {
+          formAnimation.classList.remove("show");
+        }, 6000);
+      }
+    </script>
   </body>
 </html>
+
