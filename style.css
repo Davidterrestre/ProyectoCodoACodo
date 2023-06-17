@@ -108,7 +108,7 @@ body{
 .parrafo-index{
     align-self: center;
     color:rgb(218, 218, 218);
-    font-size: 25px;
+    font-size: 1.5rem;
     background-color:rgba(45, 45, 45, 0.8);
     padding: 1rem;
     margin: 0.5rem;
@@ -398,37 +398,42 @@ footer{
     color:var(--clr-primary);
 }
 
-/*responsive*/
+/*------------------------ responsive de index ------------------------------------- */
 
-@media screen and (max-width: 768px) {
-      
-    .header-right {
-      display: none;
+@media (max-width:600px){
+    .escalable{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.3 1fr 0.2fr;
+        grid-template-areas:
+        "header-top" 
+        "container-news"
+        "indexfooter";
     }
-    .menu {
-      display: block;
-      
-    }
-    .header-right.show {
-      display: block;
-    }
-    
-    .menu.active {
-        background: #055f20; 
-      }
-}
-/* Estilos para el texto del índice */
-.titulo-index {
-    font-size: 36px; /* Ajusta el tamaño de fuente como desees */
-    text-align: center; /* Centra el texto */
-  }
-  
-  .parrafo-index {
-    font-size: 16px; /* Ajusta el tamaño de fuente como desees */
-    text-align: justify; /* Justifica el texto */
-    margin: 0 auto; /* Centra el texto horizontalmente */
-    max-width: 800px; /* Ajusta el ancho máximo del texto como desees */
-    padding: 0 20px; /* Añade un poco de espacio interno */
-  }
 
-    
+    .header-top{
+        grid-area: header-top;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-news{
+        margin: 0;
+        margin-top: 60%;
+        grid-area: container-news;
+        height: auto;
+        width: 100%;
+    }
+
+    .indexfooter{
+        grid-area: indexfooter;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: grid;
+        padding: 0.5rem;
+    }
+
+}  
